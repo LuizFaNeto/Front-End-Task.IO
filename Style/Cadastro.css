@@ -1,4 +1,3 @@
-/* Variáveis */
 :root {
     --cor-texto-princial: #000000;   
     --cor-texto-secundario: #374151; 
@@ -7,9 +6,9 @@
     --cor-fundo: #ffffff; 
     --cor-fundo-secundario: #BBE8F2; 
 
-    --font-primaria: 'Arial', sans-serif;
-    --font-secundaria: 'Helvetica', sans-serif;
-    --font-terciaria: 'Verdana', sans-serif;
+    --font-principal: 'Inter', sans-serif;
+    --font-labels: 'Open Sans', sans-serif;
+    --font-btn: 'lato', sans-serif;
 }
 
 * {
@@ -18,75 +17,70 @@
     box-sizing: border-box;
 }
 
-/* Centraliza o container na tela */
 body {
     min-height: 100vh;               
     display: flex;                   
     justify-content: center;         
     align-items: center;             
-    background-color: var(--cor-fundo);  /* fundo com cor secundária */
-    font-family: var(--font-primaria);  
+    background-color: var(--cor-fundo);  
+    font-family: var(--font-principal);  
 }
 
 .cadastroContainer {
     width: 60%;                      
     max-width: 600px;                
     padding: 5%;                     
-    background-color: var(--cor-fundo-secundario);   /* container com cor de contraste */
+    background-color: var(--cor-fundo-secundario);   
     border-radius: 10px;             
     box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
     text-align: center;              
-    font-family: var(--font-secundaria);
+    font-family: var(--font-labels);
 }
 
-/* Títulos */
 .msgBemVindo {
     margin-bottom: 5%;               
-    color: var(--cor-texto-princial);      /* títulos em primária (destaque) */
-    font-family: var(--font-terciaria);
+    color: var(--cor-texto-princial);      
+    font-family: var(--font-principal);
 }
 
-/* Grupos do formulário */
 .cadastroContainer form > div {
     margin-bottom: 5%;               
     text-align: left;                
 }
 
-/* Labels */
 label {
     display: block;
     margin-bottom: 2%;
     font-weight: bold;
     font-size: 0.95rem;
-    color: var(--cor-texto-princial);    /* labels em cor base/neutra */
-    font-family: var(--font-secundaria);
+    color: var(--cor-texto-princial);    
+    font-family: var(--font-labels);
 }
 
-/* Inputs */
 input {
     width: 100%;                     
     padding: 2%;                     
-    border: 1px solid var(--cor-fundo); /* borda em primária */
+    border: 1px solid var(--cor-fundo); 
     border-radius: 5px;
     font-size: 1rem;
-    font-family: var(--font-primaria);
+    font-family: var(--font-principal);
 }
 
-/* Botão */
+
 .btnCadastro {
     width: 100%;
     padding: 3%;
-    background-color: var(--cor-btn);  /* botão primário */
+    background-color: var(--cor-btn);  
     border: none;
     border-radius: 5px;
-    color: var(--cor-texto-princial);            /* texto em cor de contraste */
+    color: var(--cor-texto-princial);           
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease;
-    font-family: var(--font-secundaria);
+    font-family: var(--font-btn);
 }
 
 .btnCadastro:hover {
-    background-color: var(--cor-btn-secundario); /* hover puxa cor base */
-    color: var(--cor-texto-secundario);             /* mantém contraste */
+    background-color: var(--cor-btn-secundario); 
+    color: var(--cor-texto-secundario);             
 }
