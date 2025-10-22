@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../Style/Cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cadastroContainer">
+
+        <h1 class="msgBemVindo">Seja bem vindo ao Task.IO</h1>
+        <h2 class="msgBemVindo">Cadastro</h2>
+
+        <form>
+            <!-- Email para cadastrar -->
+            <div class="emailDiv">
+                <label for="inputEmail" class="emailLabel">Email</label>
+                <div class="inputEmailDiv">
+                    <input type="email" class="inputEmail" id="inputEmail">
+                </div>
+            </div>
+
+            <!-- Confirmar email -->
+            <div class="confEmailDiv">
+                <label for="inputConfEmail" class="confEmailLabel">Confirmar Email</label>
+                <div class="inputConfEmailDiv">
+                    <input type="email" class="inputConfEmail" id="inputConfEmail">
+                </div>
+            </div>
+
+            <!-- Senha para cadastrar -->
+            <div class="senhaDiv">
+                <label for="inputSenha" class="senhaLabel">Senha</label>
+                <div class="inputSenhaDiv">
+                    <input type="password" class="inputSenha" id="inputSenha">
+                </div>
+            </div>
+
+            <!-- Confirmar senha -->
+            <div class="confSenhaDiv">
+                <label for="inputConfSenha" class="confSenhaLabel">Confirmar Senha</label>
+                <div class="inputConfSenhaDiv">
+                    <input type="password" class="inputConfSenha" id="inputConfSenha">
+                </div>
+            </div>
+
+            <!-- Botão de cadastro -->
+            <button type="submit" class="btnCadastro">Cadastrar</button>
+
+        </form>
+    </div>
+</body>
+</html>
